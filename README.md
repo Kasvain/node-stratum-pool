@@ -41,7 +41,6 @@ Features
 * ✓ __SHA256__ (Bitcoin, Freicoin, Peercoin/PPCoin, Terracoin, etc..)
 * ✓ __Scrypt__ (Litecoin, Dogecoin, Feathercoin, etc..)
 * ✓ __Scrypt-Jane__ (YaCoin, CopperBars, Pennies, Tickets, etc..)
-* ✓ __Scrypt-N__ (Vertcoin [VTC])
 * ✓ __Quark__ (Quarkcoin [QRK])
 * ✓ __X11__ (Darkcoin [DRK], Hirocoin, Limecoin)
 * ✓ __X13__ (MaruCoin, BoostCoin)
@@ -49,6 +48,8 @@ Features
 * ✓ __Keccak__ (Maxcoin [MAX], HelixCoin, CryptoMeth, Galleon, 365coin, Slothcoin, BitcointalkCoin)
 * ✓ __Skein__ (Skeincoin [SKC])
 * ✓ __Groestl__ (Groestlcoin [GRS])
+* ✓ __Lyra2RE__ (Lyrabar, Crypto [LYB, CTO])
+* ✓ __Lyra2RE v2__ (Vertcoin [VTC])
 
 May be working (needs additional testing):
 * ? *Blake* (Blakecoin [BLC])
@@ -56,6 +57,7 @@ May be working (needs additional testing):
 * ? *Qubit* (Qubitcoin [Q2C], Myriadcoin [MYR])
 * ? *SHAvite-3* (INKcoin [INK])
 * ? *Sha1* (Sha1coin [SHA], Yaycoin [YAY])
+* ? __WhirlpoolX__ [VNL]
 
 Not working currently:
 * *Groestl* - for Myriadcoin
@@ -75,7 +77,7 @@ Example Usage
 #### Install as a node module by cloning repository
 
 ```bash
-git clone https://github.com/zone117x/node-stratum-pool node_modules/stratum-pool
+git clone https://github.com/kasvain/node-stratum-pool node_modules/stratum-pool
 npm update
 ```
 
@@ -84,7 +86,7 @@ npm update
 Create the configuration for your coin:
 
 Possible options for `algorithm`: *sha256, scrypt, scrypt-jane, scrypt-n, quark, x11, keccak, blake,
-skein, groestl, fugue, shavite3, hefty1, qubit, or sha1*.
+skein, groestl, fugue, shavite3, hefty1, qubit, sha1*, lyra2re or lyra2re2.
 
 ```javascript
 var myCoin = {
@@ -358,11 +360,11 @@ Credits
 * [viperaus](//github.com/viperaus/stratum-mining) - scrypt adaptions to python code
 * [ahmedbodi](//github.com/ahmedbodi/stratum-mining) - more algo adaptions to python code
 * [steveshit](//github.com/steveshit) - ported X11 hashing algo from python to node module
-
+* [upgradeadvice](//github.com/upgradeadvice) - Lyra2RE v2 hashing algo
 
 Donations
 ---------
-To support development of this project feel free to donate :)
+To support original developers of this project feel free to donate (hopefully original authors' addresses)
 
 * BTC: `1KRotMnQpxu3sePQnsVLRy3EraRFYfJQFR`
 * LTC: `LKfavSDJmwiFdcgaP1bbu46hhyiWw5oFhE`
